@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>lab 8.3</h1>
+    <div class="image-container"></div>
+    <script>
+        // Định nghĩa hàm createImage
+        function createImage(imgPath) {
+            return new Promise((resolve, reject) => {
+                const img = document.createElement('img');
+                img.src = imgPath;
+
+                img.onload = () => {
+                    resolve({ element: img });
+                };
+
+                img.onerror = () => {
+                    reject(new Error('Lỗi khi tải ảnh'));
+                };
+            });
+        }
+
+        // Thực hiện tải và hiển thị ảnh
+        async function loadImage(imgPath) {
+            try {
+                const { element } = await createImage(imgPath);
+                document.querySelector('.image-container').appendChild(element);
+            } catch (error) {
+                console.error(error.message);
+            }
+        }
+
+        // Load các ảnh một cách tuần tự
+        async function loadImagesSequentially(imgPaths) {
+            for (const imgPath of imgPaths) {
+                await loadImage(imgPath);
+                await new Promise((resolve) => setTimeout(resolve, 2000));
+                // Ẩn ảnh sau khi hiển thị 2 giây
+                document.querySelector('.image-container img:last-child').style.display = 'none';
+            }
+        }
+
+        const imgArray = ['img/img-1.jpg', 'img/img-2.jpg', 'img/img-3.jpg'];
+        loadImagesSequentially(imgArray);
+    </script>
+</body>
+
+</html>
