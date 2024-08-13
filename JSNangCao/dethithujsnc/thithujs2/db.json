@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "name": "hhhh",
+      "price": "450,000",
+      "image": "https://th.bing.com/th/id/OIP.mrNCnCZ2XkObl2lRpf8dJQHaEa?pid=ImgDet&w=207&h=123&c=7&dpr=1.3",
+      "id": "1"
+    },
+    {
+      "name": "san pham 2",
+      "price": "5220000",
+      "image": "https://www.imgacademy.com/sites/default/files/styles/scale_2500w/public/footballfacilities2.jpg?itok=s3L5UjU8",
+      "id": "2"
+    },
+    {
+      "id": "3067",
+      "name": "polo",
+      "price": "450",
+      "image": "https://th.bing.com/th/id/OIP.2TumufLJYnKvtmU6UMWe6wHaE8?rs=1&pid=ImgDetMain"
+    },
+    {
+      "name": "hahaa3",
+      "price": "34000000",
+      "image": "https://th.bing.com/th/id/OIP.mrNCnCZ2XkObl2lRpf8dJQHaEa?pid=ImgDet&w=207&h=123&c=7&dpr=1.3",
+      "id": "0d9c"
+    },
+    {
+      "id": "3d8d",
+      "name": "Nguyễn Đức Huy",
+      "price": "4444444",
+      "image": "https://th.bing.com/th/id/OIP.2TumufLJYnKvtmU6UMWe6wHaE8?rs=1&pid=ImgDetMain"
+    }
+  ]
+}

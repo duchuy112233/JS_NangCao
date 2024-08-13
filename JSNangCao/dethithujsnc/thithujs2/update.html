@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>add</title>
+</head>
+
+<body>
+
+    <h1 class="mt-20 text-3xl text-center">CAP NHAT SẢN PHẨM</h1>
+
+
+    <form action="" id="updateform" class="max-w-sm mx-auto mt-8 p-4 bg-white shadow-md rounded-lg">
+        <div class="mb-4">
+            <input type="text" id="name" placeholder="Tên sản phẩm"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+            <span id="nameError" class="text-red-500 hidden">Vui lòng nhập tên sản phẩm.</span>
+        </div>
+        <div class="mb-4">
+            <input type="text" id="price" placeholder="Giá"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+            <span id="priceError" class="text-red-500 hidden">Vui lòng nhập giá sản phẩm.</span>
+        </div>
+        <div class="mb-4">
+            <input type="text" id="image" placeholder="Ảnh"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+            <span id="imageError" class="text-red-500 hidden">Vui lòng nhập đường dẫn ảnh sản phẩm.</span>
+        </div>
+        <button type="submit"
+            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg focus:outline-none hover:bg-blue-600">Xac nhan
+        </button>
+    </form>
+
+
+    <script src="./update.js"></script>
+</body>
+
+</html>
