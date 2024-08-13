@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la8.1</title>
+</head>
+
+<body>
+    <h1>Lab 8.1</h1>
+    <script>
+        function whereAmI(lat, lng) {
+            // Part 1
+            fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`)
+                .then(response => {
+                    // Check if the request was successful (status code 200)
+                    if (!response.ok) {
+                        throw new Error(`Không thể tìm nạp dữ liệu vị trí (${response.status})`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // Log all properties received from the location data
+                    const country = data.country;
+                    const city = data.city || data.state;
+                    console.log(`Bạn đang ở ${city}, ${country}`);
+
+                    // Part 2
+                    renderCountry(country);
+                })
+                .catch(error => {
+                    console.error(`Lỗi...: ${error.message}`);
+                });
+        }
+
+        function renderCountry(country) {
+            // Implement rendering logic based on the country data
+            // This function will be called in Part 2
+            console.log(`Quốc gia hiển thị: ${country}`);
+        }
+
+        // Test coordinates
+        whereAmI(21.0285, 105.8542); // Hanoi coordinates
+       // whereAmI(52.508, 13.381); // Example 1
+        // whereAmI(19.037, 72.873); // Example 2
+        // whereAmI(-33.933, 18.474); // Example 3
+
+
+    </script>
+</body>
+
+</html>
