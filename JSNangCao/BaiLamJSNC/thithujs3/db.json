@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "name": "sản phẩm 1",
+      "npx": "Giáo dục vn 1",
+      "description": "Sách tốt 1",
+      "price": "40000",
+      "rating": "5",
+      "id": "1"
+    },
+    {
+      "name": "sản phẩm mới",
+      "npx": "Giáo dục 99",
+      "description": "Sách tốt new",
+      "price": "4567000",
+      "rating": "4",
+      "id": "2"
+    },
+    {
+      "id": "8e86",
+      "name": "Tiếng anh 3",
+      "npx": "Hà Nội",
+      "description": "Hay",
+      "price": "98000",
+      "rating": "2"
+    },
+    {
+      "name": "sánh văn 12",
+      "npx": "giáo dục việt nam 10",
+      "description": "rất hay",
+      "price": "137000",
+      "rating": "4",
+      "id": "aae1"
+    }
+  ]
+}

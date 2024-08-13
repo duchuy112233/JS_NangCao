@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "hhhh",
+      "price": "450,000",
+      "image": "https://th.bing.com/th/id/OIP.mrNCnCZ2XkObl2lRpf8dJQHaEa?pid=ImgDet&w=207&h=123&c=7&dpr=1.3",
+      "id": "1"
+    },
+    {
+      "name": "san pham 2",
+      "price": "5220000",
+      "image": "https://th.bing.com/th/id/R.4de0f89beeafe4f0b67c767b36f1adf9?rik=Wgnp5ljFhokg%2fQ&pid=ImgRaw&r=0",
+      "id": "2"
+    },
+    {
+      "name": "hahaa3",
+      "price": "34000000",
+      "image": "https://th.bing.com/th/id/OIP.2TumufLJYnKvtmU6UMWe6wHaE8?rs=1&pid=ImgDetMain",
+      "id": "0d9c"
+    },
+    {
+      "name": "duchuy2004",
+      "price": "ok",
+      "image": "https://th.bing.com/th/id/R.4de0f89beeafe4f0b67c767b36f1adf9?rik=Wgnp5ljFhokg%2fQ&pid=ImgRaw&r=0",
+      "id": "8146"
+    }
+  ]
+}
